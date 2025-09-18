@@ -1,0 +1,18 @@
+.typing-effect {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: "|";
+        position: absolute;
+        bottom: -2px;
+        right: -10px;
+        animation: blink 1s steps(1) infinite;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

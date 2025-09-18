@@ -1,0 +1,27 @@
+/* All styles for the main app container and the content area */
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    min-width: 320px;
+}
+
+.main-content {
+    flex-grow: 1; /* This is the key property */
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    color: white;
+    position: relative;
+    padding-bottom: 20px;
+}
